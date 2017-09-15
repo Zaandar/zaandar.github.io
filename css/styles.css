@@ -1,14 +1,22 @@
 * {
   font-family: Roboto, sans-serif;
-  background: #373737;
+  border-radius: 15px;
   color: #DCD0C0;
 }
 
 .container {
-  max-width: 940px;
+  max-width: 950px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #373737;
+  box-shadow: 10px 10px 15px #AAA;
+}
+
+.intro {
+  padding: 10px;
 }
 
 .logo {
@@ -24,55 +32,105 @@
 .myTitle {
   text-align: right;
   font-size: 24px;
-  /*line-height: 20px;*/
   margin-bottom: 30px;
 }
 
 .banner {
-  width: 940px;
-  border-radius: 15px;
-  line-height: 50px;
+  width: 920px;
+}
+
+.featured {
+  border: 1px solid #FFF;
+  margin-bottom: 10px;
+  padding: 15px;
 }
 
 .projectsTitle {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 5px;
+  margin: 1px;
 }
 
 .projects {
   display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-wrap: wrap;
   -ms-flex-direction: column;
+  -ms-flex-wrap: wrap;
+  display: -webkit-box;
   -webkit-flex-flow: row wrap;
+  display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
 
-.projects div {
+.projects .image {
   -webkit-box-flex: auto;
-  /* ios */
   -ms-flex: auto;
-  /* windows */
   flex: auto;
-  /* other */
-  width: 250px;
-  margin: .5vw;
+  width: 275px;
+  margin: .6vw;
+  text-align: center;
 }
 
-.projects div img {
+.projects .image img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
 }
 
-.projectLabel {
-  width: 150px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  line-height: 25px;
+.imageLabel {
+  font-size: 22px;
+  font-weight: bolder;
+  line-height: 1px;
+}
+
+.imageLink {
+  font-size: 14px;
+}
+
+@media only screen
+  and (min-device-width: 412px)
+  and (max-device-width: 732px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .banner {
+    width: 380px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .myName {
+    font-size: 22px;
+  }
+  .myTitle {
+    font-size: 20px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 412px)
+  and (max-device-width: 732px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .banner {
+    width: 640px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .banner {
+    width: 740px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .banner {
+    width: 900px;
+    ;
+  }
 }
