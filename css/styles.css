@@ -85,52 +85,38 @@
   font-size: 14px;
 }
 
-@media only screen
-  and (min-device-width: 412px)
-  and (max-device-width: 732px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width:320px) {
   .banner {
     width: 380px;
   }
-  .logo {
-    width: 100px;
-  }
-  .myName {
-    font-size: 22px;
-  }
-  .myTitle {
-    font-size: 20px;
-  }
 }
 
-@media only screen
-  and (min-device-width: 412px)
-  and (max-device-width: 732px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width:480px) {
   .banner {
-    width: 640px;
+    width: 460px;
   }
 }
 
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width:640px) {
   .banner {
-    width: 740px;
+    width: 620px;
   }
 }
 
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width:780px) {
+  .banner {
+    width: 760px;
+  }
+}
+
+@media (min-width:960px) {
   .banner {
     width: 900px;
-    ;
+  }
+}
+
+@media (min-width:1024px) {
+  .banner {
+    width: 940px;
   }
 }
